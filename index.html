@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julia Leonel | Desenvolvedora em formação</title>
+  <meta name="description" content="Portfólio de Julia Leonel, estudante de Técnico em TI no Cotemig. Front-end com HTML, CSS e JavaScript, banco de dados MySQL e C#.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='25' font-size='26' font-family='Georgia,serif' fill='%239a3b5e'>J</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    document.documentElement.setAttribute("data-tema", localStorage.getItem("tema") || "claro");
+  </script>
+</head>
+<body>
+
+  <a class="pular-para" href="#inicio">Pular para o conteúdo</a>
+
+  <header class="topo" id="topo">
+    <div class="topo-interno">
+      <a href="#inicio" class="marca">Julia Leonel<span>.</span></a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="topo-acoes">
+        <button class="btn-tema" id="btn-tema" type="button" aria-label="Alternar modo claro e escuro">
+          <span id="icone-tema">☾</span>
+        </button>
+        <button class="btn-menu" id="btn-menu" type="button" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="inicio">
+      <div class="inicio-texto">
+        <p class="sobretitulo">Estudante de Técnico em TI &middot; Belo Horizonte, MG</p>
+
+        <h1>Julia Leonel</h1>
+
+        <p class="paragrafo-inicio">
+          Estudo no Cotemig e passo o dia escrevendo HTML, CSS e JavaScript — além de
+          modelar banco de dados em MySQL e programar em C#. Gosto de transformar um
+          layout em página que funciona de verdade: rápida, responsiva e com código
+          que a próxima pessoa consegue ler.
+        </p>
+
+        <div class="inicio-botoes">
+          <a href="#projetos" class="botao botao-solido">Ver meus projetos</a>
+          <button type="button" class="botao botao-vazado" id="btn-contato">Falar comigo</button>
+        </div>
+      </div>
+
+      <aside class="ficha revelar">
+        <h2 class="ficha-titulo">Resumo</h2>
+        <dl>
+          <div><dt>Foco</dt><dd>Front-end &amp; banco de dados</dd></div>
+          <div><dt>Stack</dt><dd>HTML · CSS · JavaScript · MySQL · C#</dd></div>
+          <div><dt>Escola</dt><dd>Cotemig — Técnico em TI</dd></div>
+          <div><dt>Local</dt><dd>Belo Horizonte / MG</dd></div>
+          <div><dt>Status</dt><dd><span class="ponto"></span>Procurando estágio</dd></div>
+        </dl>
+        <a class="ficha-link" href="https://github.com/12501301-eng" target="_blank" rel="noopener">
+          Ver meu GitHub &rarr;
+        </a>
+      </aside>
+    </section>
+
+    <section id="sobre" class="secao">
+      <h2 class="titulo-secao"><span class="num">01</span> Sobre mim</h2>
+
+      <div class="sobre">
+        <div class="sobre-texto revelar">
+          <p>
+            Meu nome é <strong>Julia Leonel</strong> e estou me formando técnica em
+            Tecnologia da Informação no Cotemig. Comecei pelo front-end e hoje
+            trabalho os três lados de uma aplicação: a tela, a lógica e os dados.
+          </p>
+          <p>
+            No front-end uso HTML semântico, CSS com Flexbox e Grid e JavaScript puro,
+            sempre pensando em responsividade. No banco de dados trabalho com MySQL —
+            modelagem, relacionamento entre tabelas e consultas SQL. Em C# estudo
+            lógica, orientação a objetos e a conexão da aplicação com o banco.
+          </p>
+          <p>
+            Sou organizada, pergunto quando não sei e entrego o que combinei. Procuro
+            estágio para aplicar isso em projeto real.
+          </p>
+        </div>
+
+        <div class="estudando revelar">
+          <h3>Estudando agora</h3>
+          <ul>
+            <li>Consultas SQL com JOIN e subconsultas</li>
+            <li>Orientação a objetos em C#</li>
+            <li>Git e versionamento de código</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="secao">
+      <h2 class="titulo-secao"><span class="num">02</span> Habilidades</h2>
+
+      <div class="grade-habilidades">
+        <article class="cartao revelar">
+          <h3>Front-end</h3>
+          <p>A parte que o usuário vê e usa.</p>
+          <ul class="tags">
+            <li>HTML5 semântico</li>
+            <li>CSS3</li>
+            <li>Flexbox</li>
+            <li>CSS Grid</li>
+            <li>Responsividade</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+
+        <article class="cartao revelar">
+          <h3>Banco de dados</h3>
+          <p>Onde a informação fica guardada e organizada.</p>
+          <ul class="tags">
+            <li>MySQL</li>
+            <li>Modelagem</li>
+            <li>SQL</li>
+            <li>JOIN</li>
+            <li>Normalização</li>
+          </ul>
+        </article>
+
+        <article class="cartao revelar">
+          <h3>Programação</h3>
+          <p>Lógica e regras por trás da aplicação.</p>
+          <ul class="tags">
+            <li>C#</li>
+            <li>Orientação a objetos</li>
+            <li>Lógica de programação</li>
+            <li>Estruturas de dados</li>
+          </ul>
+        </article>
+
+        <article class="cartao revelar">
+          <h3>Ferramentas</h3>
+          <p>O que uso no dia a dia para produzir.</p>
+          <ul class="tags">
+            <li>Git &amp; GitHub</li>
+            <li>VS Code</li>
+            <li>Figma</li>
+            <li>MySQL Workbench</li>
+            <li>Visual Studio</li>
+          </ul>
+        </article>
+
+        <article class="cartao cartao-largo revelar">
+          <h3>Habilidades pessoais</h3>
+          <p>O que levo para dentro de qualquer equipe.</p>
+          <ul class="tags">
+            <li>Organização</li>
+            <li>Comunicação</li>
+            <li>Trabalho em equipe</li>
+            <li>Atenção a detalhe</li>
+            <li>Vontade de aprender</li>
+            <li>Cumprimento de prazo</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projetos" class="secao">
+      <h2 class="titulo-secao"><span class="num">03</span> Projetos</h2>
+      <p class="intro-secao">
+        Trabalhos feitos no curso e por conta própria. Todo o código está no meu GitHub.
+      </p>
+
+      <div class="grade-projetos">
+        <article class="projeto revelar">
+          <span class="projeto-num">01</span>
+          <h3>Tabela Periódica interativa</h3>
+          <p>
+            Tabela periódica montada em CSS Grid, com filtro por grupo e um modal que
+            abre os dados do elemento ao clicar. Sem nenhuma biblioteca externa.
+          </p>
+          <ul class="tags tags-mini">
+            <li>HTML</li><li>CSS Grid</li><li>JavaScript</li>
+          </ul>
+          <a class="projeto-link" href="https://github.com/12501301-eng" target="_blank" rel="noopener">Código no GitHub &rarr;</a>
+        </article>
+
+        <article class="projeto revelar">
+          <span class="projeto-num">02</span>
+          <h3>Loja virtual — página de produtos</h3>
+          <p>
+            Catálogo com carrinho em JavaScript: cálculo do total, remoção de item e
+            dados mantidos no navegador com localStorage.
+          </p>
+          <ul class="tags tags-mini">
+            <li>JavaScript</li><li>localStorage</li><li>Responsivo</li>
+          </ul>
+          <a class="projeto-link" href="https://github.com/12501301-eng" target="_blank" rel="noopener">Código no GitHub &rarr;</a>
+        </article>
+
+        <article class="projeto revelar">
+          <span class="projeto-num">03</span>
+          <h3>Sistema de cadastro em C#</h3>
+          <p>
+            Cadastro de clientes com as quatro operações básicas (inserir, listar,
+            editar e excluir) conectado a um banco MySQL.
+          </p>
+          <ul class="tags tags-mini">
+            <li>C#</li><li>MySQL</li><li>CRUD</li>
+          </ul>
+          <a class="projeto-link" href="https://github.com/12501301-eng" target="_blank" rel="noopener">Código no GitHub &rarr;</a>
+        </article>
+
+        <article class="projeto revelar">
+          <span class="projeto-num">04</span>
+          <h3>Landing page a partir do Figma</h3>
+          <p>
+            Página de divulgação construída a partir de um mockup do Figma, com
+            atenção a espaçamento, tipografia e comportamento no celular.
+          </p>
+          <ul class="tags tags-mini">
+            <li>HTML</li><li>CSS</li><li>Figma</li>
+          </ul>
+          <a class="projeto-link" href="https://github.com/12501301-eng" target="_blank" rel="noopener">Código no GitHub &rarr;</a>
+        </article>
+      </div>
+
+      <div class="faixa-github revelar">
+        <div>
+          <h3>Todo o código fica no GitHub</h3>
+          <p>Repositórios do curso, testes e projetos pessoais.</p>
+        </div>
+        <a class="botao botao-solido" href="https://github.com/12501301-eng" target="_blank" rel="noopener">
+          github.com/12501301-eng
+        </a>
+      </div>
+    </section>
+
+    <section id="contato" class="secao">
+      <h2 class="titulo-secao"><span class="num">04</span> Contato</h2>
+      <p class="intro-secao">
+        Quer conversar sobre estágio, projeto ou tirar uma dúvida? Me chame por
+        qualquer um destes canais — costumo responder no mesmo dia.
+      </p>
+
+      <div class="canais">
+        <a class="canal revelar" href="mailto:12501301@aluno.cotemig.com.br">
+          <span class="rotulo">E-mail</span>
+          <span class="valor">12501301@aluno.cotemig.com.br</span>
+        </a>
+
+        <a class="canal revelar" href="tel:+553183671011">
+          <span class="rotulo">Telefone</span>
+          <span class="valor">+55 (31) 8367-1011</span>
+        </a>
+
+        <a class="canal revelar" href="https://wa.me/553183671011" target="_blank" rel="noopener">
+          <span class="rotulo">WhatsApp</span>
+          <span class="valor">Abrir conversa &rarr;</span>
+        </a>
+
+        <a class="canal revelar" href="https://github.com/12501301-eng" target="_blank" rel="noopener">
+          <span class="rotulo">GitHub</span>
+          <span class="valor">github.com/12501301-eng &rarr;</span>
+        </a>
+
+        <div class="canal canal-estatico revelar">
+          <span class="rotulo">Cidade</span>
+          <span class="valor">Belo Horizonte / MG</span>
+        </div>
+
+        <div class="canal canal-estatico revelar">
+          <span class="rotulo">Disponibilidade</span>
+          <span class="valor"><span class="ponto"></span>Procurando estágio</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="rodape-grade">
+      <div>
+        <p class="marca-rodape">Julia Leonel<span>.</span></p>
+        <p class="mini">
+          Desenvolvedora em formação · Técnico em TI — Cotemig<br>
+          Belo Horizonte / MG
+        </p>
+      </div>
+
+      <div>
+        <h3>Contato</h3>
+        <p><a href="mailto:12501301@aluno.cotemig.com.br">12501301@aluno.cotemig.com.br</a></p>
+        <p><a href="tel:+553183671011">+55 (31) 8367-1011</a></p>
+        <p><a href="https://github.com/12501301-eng" target="_blank" rel="noopener">github.com/12501301-eng</a></p>
+      </div>
+
+      <nav aria-label="Navegação do rodapé">
+        <h3>Seções</h3>
+        <p><a href="#inicio">Início</a></p>
+        <p><a href="#sobre">Sobre</a></p>
+        <p><a href="#habilidades">Habilidades</a></p>
+        <p><a href="#projetos">Projetos</a></p>
+        <p><a href="#contato">Contato</a></p>
+      </nav>
+    </div>
+
+    <p class="assinatura">
+      &copy; <span id="ano"></span> Julia Leonel. Todos os direitos reservados.
+    </p>
+  </footer>
+
+  <div class="modal-fundo" id="modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+      <h3 id="modal-titulo">Vamos conversar</h3>
+      <p>Me chame por qualquer um destes canais:</p>
+
+      <ul class="modal-canais">
+        <li><a href="mailto:12501301@aluno.cotemig.com.br">12501301@aluno.cotemig.com.br</a></li>
+        <li><a href="tel:+553183671011">+55 (31) 8367-1011</a></li>
+        <li><a href="https://wa.me/553183671011" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><a href="https://github.com/12501301-eng" target="_blank" rel="noopener">github.com/12501301-eng</a></li>
+      </ul>
+
+      <button class="botao botao-solido" type="button" id="fechar-modal">Fechar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
